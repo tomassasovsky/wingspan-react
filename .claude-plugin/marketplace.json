@@ -1,0 +1,25 @@
+{
+  "name": "wingspan-react",
+  "owner": {
+    "name": "Tomas Sasovsky",
+    "url": "https://github.com/tomassasovsky"
+  },
+  "metadata": {
+    "description": "Wingspan React marketplace - SDLC workflows and React best-practice skills for Claude Code",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "wingspan-react",
+      "description": "Wingspan React - AI-native SDLC workflows plus React and TypeScript best-practice skills, review agents, and lint, format, and typecheck hooks.",
+      "version": "0.1.0",
+      "source": "./",
+      "repository": "https://github.com/tomassasovsky/wingspan-react",
+      "homepage": "https://github.com/tomassasovsky/wingspan-react",
+      "author": {
+        "name": "Tomas Sasovsky",
+        "url": "https://github.com/tomassasovsky"
+      }
+    }
+  ]
+}
