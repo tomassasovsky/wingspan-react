@@ -1,6 +1,6 @@
 {
   "name": "wingspan-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Wingspan React - AI-native SDLC workflows (brainstorm, plan, build, review) plus React and TypeScript best-practice skills, review agents, and automated lint, format, and typecheck hooks, modeled on Very Good Ventures' Wingspan and AI Flutter plugins.",
   "homepage": "https://github.com/tomassasovsky/wingspan-react",
   "repository": "https://github.com/tomassasovsky/wingspan-react",

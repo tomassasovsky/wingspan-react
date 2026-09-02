@@ -6,13 +6,13 @@
   },
   "metadata": {
     "description": "Wingspan React marketplace - SDLC workflows and React best-practice skills for Claude Code",
-    "version": "0.1.0"
+    "version": "0.1.1"
   },
   "plugins": [
     {
       "name": "wingspan-react",
       "description": "Wingspan React - AI-native SDLC workflows plus React and TypeScript best-practice skills, review agents, and lint, format, and typecheck hooks.",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "source": "./",
       "repository": "https://github.com/tomassasovsky/wingspan-react",
       "homepage": "https://github.com/tomassasovsky/wingspan-react",
