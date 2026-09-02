@@ -13,7 +13,7 @@ jobs:
     name: 📝 Markdown Quality
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Lint Markdown
         uses: DavidAnson/markdownlint-cli2-action@v24
         with:
@@ -26,7 +26,7 @@ jobs:
     name: ✍️ Spelling Check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Spell Check
         uses: streetsidesoftware/cspell-action@v9
         with:
@@ -39,7 +39,7 @@ jobs:
     name: 🪝 Hook Scripts
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: ShellCheck
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq shellcheck
@@ -50,7 +50,7 @@ jobs:
     name: 📦 Manifest Validation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Validate plugin manifest
         run: bash ./scripts/validate_plugin_manifest.sh
       - name: Validate marketplace JSON
@@ -59,7 +59,7 @@ jobs:
     name: 🔍 Plugin Validation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
         with:
           node-version: 22
@@ -74,7 +74,7 @@ jobs:
     outputs:
       skills: ${{ steps.changed-skills.outputs.skills }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: Get changed skills
@@ -99,7 +99,7 @@ jobs:
       matrix:
         skill: ${{ fromJson(needs.detect-changed-skills.outputs.skills) }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Validate ${{ matrix.skill }}
         uses: Flash-Brew-Digital/validate-skill@v1
         with:
